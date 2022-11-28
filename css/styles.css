@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body, button, img, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+
+main {
+    width: 375px;
+    min-height: 375px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 5%;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.message {
+    color: hsl(217, 12%, 63%);
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0px 25px;
+}
+
+li, .circle {
+    display: inline-block;
+    color: hsl(217, 12%, 63%);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color:hsl(213, 19%, 23%);
+    text-align: center;
+    line-height: 50px;
+}
+.clicked {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+li:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+button.circle {
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.2rem;
+}
+
+button.circle:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.thankyou {
+    text-align: center;
+}
+
+.rated {
+    margin-top: 25px;
+    width: fit-content;
+    padding: 0px 15px;
+    border-radius: 25px;
+    color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

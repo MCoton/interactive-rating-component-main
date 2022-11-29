@@ -3,15 +3,20 @@ let value = '';
 // Select interactive elements and assign to a constant
 const ratings = document.querySelectorAll('li');
 const submit = document.getElementById('submit').addEventListener('click', handleSubmit);
+
 // Select 'state' elements
 const thankyouState = document.getElementById('thankyouState');
 const ratingState = document.getElementById('ratingState');
-// Select rating span in thankyou state
+
+// Select warning message span
+const warning = document.getElementById('warning');
+
+// Select rating 'span' in thankyou state
 const ratedAs = document.getElementById('chosenRating')
 
-// Add event listeners to the elements selected above
+// Add event listeners to the 'li' elements selected above
 ratings.forEach(rating => {
-    rating.addEventListener('click', handleClick, false); 
+    rating.addEventListener('click', handleClick, false);
 });
 
 
@@ -47,6 +52,6 @@ function handleSubmit () {
         thankyouState.classList.remove('hidden');
         ratedAs.innerText = value;
     } else {
-        alert ('Please select a value');
+        warning.classList.remove('hidden');
     }
 }
